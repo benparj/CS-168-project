@@ -180,17 +180,17 @@ with torch.no_grad():
        
 
         correct += (predicted == labels).sum().item()
-    print(y_pred)
-    print(y_test)
+#     print(y_pred)
+#     print(y_test)
 
 
-# Calculate AUC-ROC score
-auc = metrics.roc_auc_score(y_test, y_pred)
-print('AUC_ROC score of the network on the 20 test images: %d ' % (
-    auc))
-# print(total)
-print('Accuracy of the network on the 20 test images: %d %%' % (
-    100 * correct / total))
+# # Calculate AUC-ROC score
+# auc = metrics.roc_auc_score(y_test, y_pred)
+# print('AUC_ROC score of the network on the 20 test images: %d ' % (
+#     auc))
+# # print(total)
+# print('Accuracy of the network on the 20 test images: %d %%' % (
+#     100 * correct / total))
 
 
 
